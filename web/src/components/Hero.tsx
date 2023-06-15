@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
-import Logo from "../../assets/logo.svg";
+import Logo from "../assets/logo.svg";
 
 export default function HeroComponent() {
   return (
@@ -18,12 +19,12 @@ export default function HeroComponent() {
         </p>
       </div>
 
-      <a
-        href="#"
+      <Link
+        href="/memories/new"
         className="inline-block uppercase rounded-full bg-green-500 px-5 py-3 font-alt text-sm leading-none text-black hover:bg-green-600 transition-colors"
       >
         Cadastrar lembrança
-      </a>
+      </Link>
     </div>
   );
 }
